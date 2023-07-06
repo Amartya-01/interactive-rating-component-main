@@ -1,0 +1,144 @@
+/*### Primary
+
+- Orange: #fb7413
+
+### Neutral
+
+- White: #ffffff
+- Light Grey: #959eac
+- Medium Grey: #7c8798
+- Dark Blue: #252d37
+- Very Dark Blue:#121417 */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+}
+
+body{
+    font-family: "Overpass", sans-serif;
+    font-size: 15px;
+    background-color: #121417 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+button{
+    font-family: inherit;
+}
+
+p{
+}
+
+.main-container, .thank-you{
+    background-color: #252d37;
+    padding: 1.5rem;
+    border-radius: 0.625rem;
+    margin: 1.5rem;
+    max-width: 400px ;
+}
+
+.main-container img{
+    background-color: hsl(213, 18%, 22%);
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.main-container h1{
+    color: #fff;
+    margin: 2rem 0 1rem;
+}
+
+.main-container p{
+    color: hsl(217, 12%, 63%) ;
+    margin-bottom: 1rem;
+}
+
+.main-container ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.main-container ul li button{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    background-color: hsl(213, 20%, 22%);
+    padding-top: 0.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main-container ul li button:hover{
+    background-color: #fb7413;
+}
+
+.main-container ul li button:focus {
+    background-color: hsl(217, 12%, 63%);
+}
+
+.btn-submit{
+    background-color: #fb7413;
+    font-size: 1rem;
+    color: white;
+    width: 100%;
+    padding: 0.8rem 0 0.6rem 0;
+    border-radius: 30px;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    transition: 0.3s;
+}
+
+.btn-submit:hover{
+    cursor: pointer;
+    color:  #fb7413;
+    background-color: white;
+}
+
+.thank-you{
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    justify-content: center;
+}
+
+.thank-you img{
+    display: block;
+    margin: 0 auto 2rem;
+}
+
+.thank-you p.gray{
+    color:  #fb7413;;
+    background-color: hsl(213, 20%, 22%);
+    border-radius: 30px;
+    padding: 0.2rem 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.thank-you h2{
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.thank-you p{
+    color: hsl(217, 12%, 63%);
+    margin-bottom: 2rem;
+}
+
+.hidden{
+    display: none;
+}
